@@ -1,3 +1,98 @@
 <%- include("templates/header.ejs") %>
-<h1>Welcome to Potato Heads</h1>
+<!-- Site logo -->
+<!-- <img src = "../public/img/furrybitch.jpg" /> -->
+<img id="sitelogo" src="https://img.freepik.com/premium-photo/close-up-furry-blue-monster-with-big-eyes-generative-ai_955884-21295.jpg?w=740" width="200px" height="200px" />
+
+<!-- Site logo -->
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Potato Heads FAQ</a>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Language
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Burmese</a>
+          <a class="dropdown-item" href="#">Chinese</a>
+          <a class="dropdown-item" href="#">Thai</a>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+  
+        <div class="headaccordion">
+            <div class="accordion">
+              <h1 class="acctitle">Enrollment admission & registration <i class="fas fa-angle-down"></i></h1>
+              <div class="acccontent">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, vitae. Eius aliquam nemo consequuntur id! Rerum ducimus placeat, laudantium, molestiae debitis earum animi architecto repudiandae eaque impedit nihil error repellendus.</p>
+              </div>
+          </div>
+          <div class="accordion">
+              <h1 class="acctitle">Community and activity records<i class="fas fa-angle-down"></i></h1>
+              <div class="acccontent">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti dolore ullam non omnis ipsam dolor eligendi odio, minima libero culpa laborum exercitationem modi, architecto reiciendis provident quod necessitatibus sit ipsum.</p>
+              </div>
+          </div>
+
+          <div class="accordion">
+              <h1 class="acctitle">Student visa and extensions<i class="fas fa-angle-down"></i></h1>
+              <div class="acccontent">
+                  <p>(1)Education and Community Engagement:
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam rem rerum in accusamus pariatur corrupti facilis quam ipsum repudiandae eum laborum nobis eaque animi quia, quis modi. Ut, molestiae?</p>
+              </div>
+          </div>
+			
+          </div>
+ 
+<!-- chat bot section  -->
+<div id = "chatbot">
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+        <h2>Chat Support</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hello!<br>How may I help you?</p>
+        </li>
+        </ul>
+        <div class="chat-input">
+        <textarea placeholder="Enter Question" spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+</div>
+  <!-- chat bot section  -->
+
+  <!-- Contact info -->
+
+	<div class="containercontact">
+		<button id="btn-contact"><i class="fas fa-map-marker-alt"></i></button>
+	</div>
+
+	<!-- START MODAL AREA -->
+	<!-- Start Contact Modal -->
+	<div id="contactmodal" class="modal">
+		<span class="btn-close">x</span>
+		<div id="contactinfo">
+			<h2>Rangsit University</h2>
+			<p>Location:52/347 Phahonyothin Rd, Lak Hok, Mueang Pathum Thani District, Pathum Thani 12000</p>
+			<p>Tel:02-791-6000</p>
+			<p>Fax:02-791-5577</p>
+		</div>
+	</div>
+	<!-- End Contact Modal -->
+	<!-- END MODAL AREA -->
+
+	<!-- Contact info -->
+
+<script src="/styles/app.js" defer></script>
+<script src="/styles/app2.js"></script>
 <%- include("templates/footer.ejs") %>
